@@ -24,8 +24,8 @@ app.post('/create-checkout-session', async (req, res) => {
         quantity: item.quantity,
       })),
       mode: 'payment',
-      success_url: 'http://localhost:5173/success',
-      cancel_url: 'http://localhost:5173/cancel',
+      success_url: 'https://www.immersivelens.io//success',
+      cancel_url: 'https://www.immersivelens.io//cancel',
     });
 
     res.json({ url: session.url }); // Send the Stripe checkout URL to frontend
